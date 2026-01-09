@@ -137,8 +137,7 @@ export default function ProductDetails() {
                       : 'opacity-60 hover:opacity-100'
                   }`}
                   aria-label={`View image ${idx + 1} of ${product.images.length}`}
-                  aria-pressed={selectedImage === idx}
-                  role="listitem"
+                  aria-current={selectedImage === idx ? "true" : "false"}
                 >
                   <div className={`w-full h-full bg-gradient-to-br ${img}`} />
                 </button>
@@ -267,7 +266,7 @@ export default function ProductDetails() {
                     <li>• Material: Italian full-grain leather</li>
                     <li>• Hardware: 24k gold-plated</li>
                     <li>• Lining: 100% silk</li>
-                    <li>• Dimensions: 12" W x 10" H x 5" D</li>
+                    <li>• Dimensions: 12&quot; W x 10&quot; H x 5&quot; D</li>
                     <li>• Weight: 1.2 lbs</li>
                   </ul>
                 </Accordion.Content>
@@ -358,3 +357,4 @@ export default function ProductDetails() {
     </div>
   );
 }
+
